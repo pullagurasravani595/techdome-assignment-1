@@ -1,0 +1,23 @@
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "rajesh",
+    "email": "rahesh123@gmail.com",
+    "role": "admin"
+}
+###
+
+POST http://localhost:3000/loans
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhaGVzaDEyM0BnbWFpbC5jb20iLCJpYXQiOjE3MzEwNzE3NjZ9.tvivQKC3ZX7SotV00NnGPy0ifEWeisR1WmWOtYhw07M
+
+{
+    "id": "1",
+    "customerId": "3",
+    "amount": 10000,
+    "term": 3,
+    "status": "pending"
+}
